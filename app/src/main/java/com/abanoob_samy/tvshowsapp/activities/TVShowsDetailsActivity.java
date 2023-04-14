@@ -143,7 +143,14 @@ public class TVShowsDetailsActivity extends AppCompatActivity {
 
                     if (tvShowsDetailsResponse.getTvShow().getGenres() != null) {
 
-                        binding.setTvShowGenres(tvShowsDetailsResponse.getTvShow().getGenres()[0]);
+                        if (tvShowsDetailsResponse.getTvShow().getGenres().length > 0) {
+                            // Access the first element of myArray
+                            binding.setTvShowGenres(tvShowsDetailsResponse.getTvShow().getGenres()[0]);
+                        } else {
+                            // Handle the case where myArray has no elements
+                            // ...
+                        }
+
                     } else {
                         binding.setTvShowGenres("N/A");
                     }
