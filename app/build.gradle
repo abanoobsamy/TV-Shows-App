@@ -9,7 +9,7 @@ android {
 //        configurations.all {
 //            resolutionStrategy { force 'androidx.core:core:1.6.0' }
 //        }
-        applicationId "com.abanoob_samy.tvshowsapp"
+        applicationId "com.abanoob_samy.tv_show_sapp"
         minSdk 21
         targetSdk 33
         versionCode 1
